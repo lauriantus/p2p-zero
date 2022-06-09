@@ -18,7 +18,7 @@ document.querySelector("html").onclick = function () {
 */
 
 //test 3:onclick for image(change):
-
+/*
 let myImage = document.querySelector('img');
 
 myImage.onclick = function () {
@@ -28,9 +28,10 @@ myImage.onclick = function () {
     } else {
         myImage.setAttribute('src', "./images/firefox_png_1.png");
 }
-}
+}*/
 
 //test 4: auth
+/*
 let myButton = document.querySelector(".button"),
     myHeading = document.querySelector(".title_auth");
 
@@ -48,4 +49,52 @@ if (!localStorage.getItem('name')) {
 
 myButton.onclick = function () {
     setUserName();
+}*/
+
+//p2p-zero_lesson1:
+/*
+console.log("part 1: \nHello World!");
+console.log("part 2 variant 1:\nHello \nWorld!");
+console.log("part 2 variant 2:");
+console.log("Hello");
+console.log("World!")
+function sum(num1, num2) {
+    let result = num1 + num2;
+    return result;
 }
+console.log("part3 bariant 1:\n",sum(12892323, 454665768));
+//or
+console.log("part3 variant 2:\n", 12892323 + 454665768);
+*/
+
+//p2p-zero_lesson2
+/*
+let first=145,
+    second = 243;
+console.log("variant 1:");
+console.log("before change valuse:\nfirst: " + first + "\nsecond: " + second);
+let newFirst = second,
+    newSecond = first;
+first = newFirst;
+second = newSecond;
+console.log("after change values:\nfirst: " + first + "\nsecond: " + second);
+
+console.log("variant 2:");
+first=145,
+second = 243;
+console.log("before change valuse:\nfirst: " + first + "\nsecond: " + second);
+let num1 = first;
+first = second;
+second = num1;
+console.log("after change values:\nfirst: " + first + "\nsecond: " + second);
+
+console.log("variant 3:");
+first=145,
+second = 243;
+console.log("before change valuse:\nfirst: " + first + "\nsecond: " + second);
+first =first + second;
+second =first - second;
+first =first - second;
+console.log("after change values:\nfirst: " + first + "\nsecond: " + second);
+
+*/
