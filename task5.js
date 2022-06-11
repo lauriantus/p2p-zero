@@ -42,9 +42,11 @@ else console.log("0");
 // result = 6 + 7 < 4 ? "мало" : "много";
 
 let login = prompt("Login:");
-login == "Сотрудник" ? "Привет"
+
+login == "Сотрудник"
+  ? alert("Привет")
   : login == "Директор"
-  ? "Здравствуйте"
+  ? console.log("Здравствуйте")
   : login == ""
-  ? "Нет логина"
-  : "";
+  ? console.log("Нет логина")
+  : console.log("");
