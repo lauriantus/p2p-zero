@@ -1,3 +1,4 @@
+/* інші варіанти
 // //
 // let text = ["word word",
 //     "      word     word      ",
@@ -56,34 +57,50 @@
 //     }
 // }
 
-// let row = prompt("Введіть ряд символів: ", "");
+// // let row = prompt("Введіть ряд символів: ", "");
+// let i = 0,
+//   row = "smFk lGFsmd ksaFof saFdf",
+//   total = 0;
+
+// console.log("\nrow = " + row);
+// while (i < row.length) {
+//   let condition =
+//     (row.charCodeAt(i) > 64 && row.charCodeAt(i) < 91) ||
+//     (row.charCodeAt(i) > 96 && row.charCodeAt(i) < 123)
+//       ? true
+//       : false;
+//   while (i < row.length && condition) {
+//     console.log(
+//       "\ni = " +
+//         i +
+//         "\trow[i] = " +
+//         row[i] +
+//         " \trow.charCodeAt(i) = " +
+//         row.charCodeAt(i)
+//     );
+//     console.log("\n" + typeof ifUpperLower + " = " + ifUpperLower);
+//     i++;
+//   }
+//   while (i < row.length && !ifUpperLower) {
+//     console.log("i = " + i);
+//     i++;
+//   }
+//   total += 1;
+// }
+// console.log("\nВ реченні " + total + " слів.");
+*/
+
+// Кількість слів у рядку, який введено користувачем
+let row = prompt("Введіть ряд символів: ", "");
 let i = 0,
-  row = "smdnk lkasmd ksadlof sakdf",
   total = 0;
 
-console.log("\nrow = " + row);
-while (i < row.length) {
-  // Скорочення умови про ASCII
-  let ifLowerRegister = row.charCodeAt(i) > 64 && row.charCodeAt(i) < 91,
-    ifUpperRegister = row.charCodeAt(i) > 96 && row.charCodeAt(i) < 123,
-    ifUpperLower = ifLowerRegister || ifUpperRegister;
-
-  while (i < row.length && ifUpperLower) {
-    console.put(
-      "\ni = " +
-        i +
-        "\trow[i] = " +
-        row[i] +
-        " \trow.charCodeAt(i) = " +
-        row.charCodeAt(i)
-    );
-    console.log("\n" + typeof ifUpperLower + " = " + ifUpperLower);
-    i++;
+for (const char of row) {
+  i++;
+  let value = char.charCodeAt(0);
+  if (!((value >= 97 && value <= 123) || (value >= 65 && value <= 90))) {
+    i = 0;
   }
-  while (i < row.length && !ifUpperLower) {
-    console.log("i = " + i);
-    i++;
-  }
-  total += 1;
+  if (i === 1) total++;
 }
-console.log("\nВ реченні " + total + " слів.");
+console.log("\nrow = " + row + "\nСлів в реченні: " + total);
