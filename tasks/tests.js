@@ -45,19 +45,32 @@
 //     setUserName();
 // }
 
-function operation(f, v) {
-  let result = [],
-    i = 0;
-  for (i; i != v.length; i++) {
-    result[i] = f(v[i]);
-  }
-  return result;
+// function operation(f, v) {
+//   let result = [],
+//     i = 0;
+//   for (i; i != v.length; i++) {
+//     result[i] = f(v[i]);
+//   }
+//   return result;
+// }
+
+// let f = function (x) {
+//   return x * x * x;
+// };
+
+// var numbers = [0, 1, 2, 5, 10];
+// var cube = operation(f, numbers);
+// console.log(cube);
+
+let number = 456568,
+  string = "",
+  num = [],++
+  j = 0;
+string += number;
+
+console.log(number.length);
+for (let i = number.length - 1; i >= 0; i--) {
+  num[j] = number[i];
+  j++;
 }
-
-let f = function (x) {
-  return x * x * x;
-};
-
-var numbers = [0, 1, 2, 5, 10];
-var cube = operation(f, numbers);
-console.log(cube);
+console.log(num);
