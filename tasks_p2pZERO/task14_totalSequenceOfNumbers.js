@@ -1,3 +1,4 @@
+// total sequeence of numbers
 let bigger = -Infinity,
   number;
 for (;;) {
